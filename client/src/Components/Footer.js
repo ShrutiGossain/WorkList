@@ -1,10 +1,10 @@
 import React from 'react'
 
 export const Footer = () => {
-  let footerStyle = {position: 'absolute', top: '100vh', width: '100%'}
+  // let footerStyle = {position: 'relative', width: '100%', top: '70vh'}
   return (
-    // id="footer"
-    <footer className="bg-dark text-light py-2" style={footerStyle}>
+    // id="footer" OR style={footerStyle}
+    <footer className="bg-dark text-light py-2">
       <p className="text-center">
         Copyright &copy; TodosList.com
       </p>
