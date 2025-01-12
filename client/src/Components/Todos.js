@@ -7,7 +7,8 @@ export const Todos = (props) => {
       <h3 className="text-center">Todos List</h3>
       {/* {props.todosObject} */}
       {/* <TodoItem todo={props.todosProp[0]}/> */}
-      {props.todosProp.map((todoVariables)=>{
+      {props.todosProp.length === 0 ? "No todos to display." :
+      props.todosProp.map((todoVariables)=>{
         return <TodoItem todo = {todoVariables} key= {todoVariables.sno} onDelete={props.onDelete}/>
       })}
     </div>
